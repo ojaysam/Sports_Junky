@@ -15,23 +15,42 @@
     <form id="form1" runat="server">
         <div>
             Reviewer Name&nbsp;&nbsp; &nbsp;
-            <input id="rvwNameOK" type="text" /><br />
+            <asp:TextBox ID="rvwNameOK" runat="server"></asp:TextBox>
             <br />
-            Review Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="rvwTextOK" type="text" /><br />
             <br />
-            Reviewed Product&nbsp; <input id="rvwdProdOK" type="text" /><br />
+            Review Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <asp:TextBox ID="rvwTextOK" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Reviewed Product&nbsp; 
+            <asp:TextBox ID="rvwdProdOK" runat="server"></asp:TextBox>
+            <br />
             <br />
             Review Rating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-            <input id="rvwRatOK" type="text" /><br />
+            <asp:TextBox ID="rvwRatOK" runat="server"></asp:TextBox>
             <br />
-            Date Added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <input id="dateAddOK" type="text" /><br />
             <br />
-            Review Approved&nbsp;
-            <input id="rvwAppOK" /> <br />
+            Date Added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+            <asp:TextBox ID="dateAddOK" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Review Approved&nbsp;&nbsp;
+            <asp:TextBox ID="rvwAppOK" runat="server"></asp:TextBox>
+            <br />
             <br />
             <input id="activeOK" type="checkbox" />Active<br />
-            <br />
-            <input id="cnclOK" type="button" value="Cancel" /><input id="btnSubmit" type="button" value="submit" onclick ="btnSubmit_OK"/></div>
+            <input id="btnSubmit" type="submit" value="Submit" /><input id="cnclOK" type="reset" value="Cancel" /><br />
+            </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
     </form>
+    <p>
+        &nbsp;</p>
 </body>
 </html>
