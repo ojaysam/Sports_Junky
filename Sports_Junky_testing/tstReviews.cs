@@ -90,9 +90,107 @@ namespace Sports_Junky_testing
 
 
 
+        [TestMethod]
+        public void FindMethodOK()
+        {
+            clsReviews AnReviews = new clsReviews();
 
+            Boolean Found = false;
+            Int32 ReviewRating = 2;
 
+            Found = AnReviews.Find(ReviewRating);
+            Assert.IsTrue(Found);
 
+        }
+
+        [TestMethod]
+        public void TestReviewRatingFound()
+        {
+            clsReviews AnReviews = new clsReviews();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ReviewRating = 2;
+            Found = AnReviews.Find(ReviewRating);
+            if (AnReviews.ReviewRating != 2)
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void TestDateAddedFound()
+        {
+            clsReviews AnReviews = new clsReviews();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ReviewRating = 2;
+            Found = AnReviews.Find(ReviewRating);
+            if (AnReviews.DateAdded != Convert.ToDateTime("19/02/2009")) ;
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void TestReviewerNameFound()
+        {
+            clsReviews AnReviews = new clsReviews();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ReviewRating = 2;
+            Found = AnReviews.Find(ReviewRating);
+            if(AnReviews.ReviewerName != "Joe Bloggs")
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void TestReviewTextFound()
+        {
+            clsReviews AnReviews = new clsReviews();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ReviewRating = 2;
+            Found = AnReviews.Find(ReviewRating);
+            if(AnReviews.ReviewText != "Very Good")
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void TestReviewedProductFound()
+        {
+            clsReviews AnReviews = new clsReviews();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ReviewRating = 2;
+            Found = AnReviews.Find(ReviewRating);
+            if(AnReviews.ReviewedProduct != "Man Utd Shorts")
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void TestReviewApprovedFound()
+        {
+            clsReviews AnReviews = new clsReviews();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ReviewRating = 2;
+            Found = AnReviews.Find(ReviewRating);
+            if(AnReviews.ReviewApproved != true)
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
     }
 
 
