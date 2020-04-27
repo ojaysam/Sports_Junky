@@ -49,10 +49,12 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsStocks.cs" />
+SamuelsBranch
+    <Compile Include="clsStaff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstReviews.cs" />
     <Compile Include="tstStocks.cs" />
+master
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
