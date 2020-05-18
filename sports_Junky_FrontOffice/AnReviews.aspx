@@ -23,7 +23,7 @@
             <br />
             <br />
             Reviewed Product&nbsp; 
-            <asp:TextBox ID="rvwdProdOK" runat="server"></asp:TextBox>
+            <asp:TextBox ID="rvwdProdOK" runat="server" OnTextChanged="rvwdProdOK_TextChanged"></asp:TextBox>
             <br />
             <br />
             Review Rating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
@@ -38,13 +38,18 @@
             <asp:TextBox ID="rvwAppOK" runat="server"></asp:TextBox>
             <br />
             <br />
+            ReviewsId
+            <asp:TextBox ID="rvwsId" runat="server"></asp:TextBox>
+            <br />
+            <br />
             <input id="activeOK" type="checkbox" />Active<br />
             <input id="btnSubmit" type="submit" value="Submit" /><input id="cnclOK" type="reset" value="Cancel" /><br />
             </div>
+        <p id="lblError">
+            [lblError]</p>
         <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
+            <asp:TextBox ID="fndField" runat="server"></asp:TextBox>
+            <input id="btnFind" type="submit" value="Find" /></p>
         <p>
             &nbsp;</p>
         <p>
