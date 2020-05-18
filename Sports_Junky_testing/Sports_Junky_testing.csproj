@@ -52,6 +52,7 @@
     <Compile Include="clsStocks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstReviews.cs" />
+    <Compile Include="tstReviewsCollection.cs" />
     <Compile Include="tstStocks.cs" />
   </ItemGroup>
   <ItemGroup>
